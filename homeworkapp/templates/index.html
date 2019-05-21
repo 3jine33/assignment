@@ -1,0 +1,84 @@
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{text-align:center; color:orangered}
+            h2 {text-align:center; color:dodgerblue}
+        
+            table{text-align: center; align-self:center }
+        </style>
+        <title>자기소개</title>
+    </head>
+
+    <body>
+        <h1>멋쟁이 사자처럼 중앙과제</h1>
+        <br>
+        <h2>IT 서비스 소개</h2>
+        <p>제가 소개했던 IT 서비스는 '공연 정보 서비스' 입니다. <br>
+        서울 근처엔 크고 작은 공연들이 정말 많지만, 그 정보들을 접하는 것은 아주 힘든 일입니다. 큰 팬페이지가 있는 대형 아이돌이 아닌 이상 보통 홍보는 인스타, 트위터 등의 SNS로 이루어 지고, 
+        팬들은 일일히 인스타그램을 뒤져가며 정보를 찾아야 합니다. 하지만 SNS를 일일히 뒤지는 것은 너무나 귀찮고 시간이 많이 드는 일이고, 바쁜 시기에는 정말 좋아하는 가수의 공연의 티켓팅을 놓치기도 합니다.<br>
+        저는 이런 불편함을 해소하고자 공연정보 서비스를 만들고자 합니다. 공연정보와 티켓팅 정보들을 날짜 별, 장르 별로 구분해 정리하여 보여줍니다. 또 사용자가 아티스트를 팔로우 하면, 그 아티스트의 티켓팅이나 공연날짜를 미리 알려주어 까먹지 않도록 도와줍니다.<br>
+        또 주최사나 아티스트의 SNS로만 전달되었던 사물함, 머천다이즈 부스 오픈 여부 등의 정보도 다 모아서 보여준다면 사용자의 편의를 극대화 할 수 있을것이라고 생각합니다.<br>
+        이 앱을 실제 런칭할 경우 저같은 공연 마니아들의 스태디한 수요가 있을 것으로 예상합니다. 저의 아이디어를 꼭 실제로 구현해 보고 싶습니다. </p>
+
+        <hr><br>
+
+        <h2>자기 소개</h2>
+        <p>이름 : 장지은 <br>
+            소속 : 숙명여자대학교 IT공학과<br>
+            나이 : 23세<br>
+        </p>
+        <p>안녕하세요 저는 숙명여자대학교 멋쟁이 사자처럼 7기 장지은 입니다. <br>
+        저는 작년까지만 해도 화학과 소속이었지만, 지난 1년 휴학 중 코딩에 재미를 붙였고, 복전을 결심했다가 연말에 충동적으로 전과까지 하게되었습니다. 이제 IT공학과 소속으로 학교를 다닌 지 3개월이 지났는데 전과라는 선택이 제 대학생활 중 가장 잘한 선택 중 하나라고 생각합니다.<br>
+        아직은 코딩 실력이 많이 부족하지만, 멋쟁이 사자처럼의 활동을 더 열심히 하여 코딩천재가 되고싶습니다.<br>
+        <br><br>
+        <h4>좋아하는 영화</h4>
+        <ul class="list-group">
+                <li class="list-group-item list-group-item-primary">이터널선샤인</li>
+                <li class="list-group-item list-group-item-secondary">트래인스포팅</li>
+                <li class="list-group-item list-group-item-success">스파이더맨 : 뉴유니버스</li>
+                <li class="list-group-item list-group-item-danger">매드맥스</li>
+                <li class="list-group-item list-group-item-warning">스토커</li>
+                <li class="list-group-item list-group-item-info">캡틴 아메리카 : 윈터솔져</li>
+                <li class="list-group-item list-group-item-light">시카고</li>
+                <li class="list-group-item list-group-item-dark">인사이드아웃</li>
+        </ul>
+        
+
+        <hr><br>
+        <h2 id="timetable">시간표</h2>
+        <table border="1">
+            <tr style="background-color: skyblue">
+                <th style="width:120px">교시</th> <th style="width:120px">월</th> <th style="width:120px">화</th> <th style="width:120px">수</th> <th style="width:120px">목</th> <th style="width:120px">금</th>
+            </tr>
+            <tr>
+                <td>1</td> <td></td> <td></td> <td style="background-color: teal">객체지향 프로그래밍</td> <td></td> <td style="background-color: teal">객체지향 프로그래밍</td>
+            </tr>
+            <tr>
+                <td>2</td> <td style="background-color:turquoise">프로그래밍 입문</td> <td></td>  <td style="background-color:turquoise">프로그래밍 입문</td> <td></td> <td></td>
+            </tr>
+            <tr>
+                <td>3</td> <td></td> <td style="background-color: aquamarine">데이터 구조</td> <td></td> <td style="background-color: aquamarine">데이터 구조</td> <td rowspan=2 style="background-color: cadetblue">사회 혁신과 기업가 정신의 이해</td>
+            </tr>
+            <tr>
+                <td>4</td> <td></td> <td></td> <td></td> <td></td>
+            </tr>
+            <tr>
+                <td>5</td> <td style="background-color:crimson">웹 프로그래밍 기초</td> <td style="background-color: cornflowerblue">IT 기기구조</td> <td style="background-color: crimson">웹 프로그래밍 기초</td> <td style="background-color: cornflowerblue">IT 기기구조</td> <td></td>
+            </tr>
+            <tr>
+                <td>6</td> <td colspan="5" style="background-color:lightblue">저녁 시간</td>
+            </tr>
+            <tr>
+                <td>7</td> <td></td> <td rowspan="2" style="background-color: cyan">동아리 활동</td> <td></td> <td></td> <td></td>
+            </tr>
+            <tr>
+                <td>8</td> <td></td> <td></td> <td></td> <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
